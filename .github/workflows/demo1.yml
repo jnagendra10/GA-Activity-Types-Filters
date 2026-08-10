@@ -1,9 +1,10 @@
+---
 name: Events Types Demo
-on: 
+on: null
 pull_request:
-    types:
-      - opened
-workflow_dispatch:
+  types:
+    - opened
+workflow_dispatch: null
 jobs:
   deploy:
     runs-on: ubuntu-latest
