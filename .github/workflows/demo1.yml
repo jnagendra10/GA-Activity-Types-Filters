@@ -7,13 +7,13 @@ on:
 
   workflow_dispatch:
   push:
-  branches:
-    - main
-    - dev
-    - test
-  branches-ignore:
-    - feature
-    - test
+    branches:
+      - main
+      - dev
+      - test
+    branches-ignore:
+      - feature
+      - test
 jobs:
   deploy:
     runs-on: ubuntu-latest
