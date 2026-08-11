@@ -1,18 +1,11 @@
 name: Events Demo 1
-on: 
-pull_request:
-    types:
-      - opened
-workflow_dispatch:
-push:
-    branches:
-      - main
-      - 'dev-*' # dev-new dev-this-is-new
-      - 'test/**' # test/new test/new/button
-      # devloper-1
-    branches-ignore:
-      - 'feature/*'
-      - 'test/**'
+on:
+  pull_request:
+    types: 
+      - opened 
+      - closed
+
+  workflow_dispatch:
 jobs:
   deploy:
     runs-on: ubuntu-latest
